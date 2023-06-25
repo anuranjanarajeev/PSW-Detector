@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form class="userForm" method="POST" enctype="multipart/form-data">
+    {{form.hidden_tag()}}
+    {{form.file()}}
+    {{form.submit()}}
+</form>
+
+<a href="{{ url_for('future') }}"><p><br>Detect presence of other species...</p></a>
+{% endblock %}
+
+
+

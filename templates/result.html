@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Result</h1>
+<p>{{ result }}</p>
+<!-- Add your result-specific content -->
+<a href="{{ url_for('index') }}">
+    <p><br>Test Another Audio...</p>
+</a>
+{% endblock %}
